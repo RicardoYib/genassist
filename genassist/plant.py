@@ -32,3 +32,6 @@ class CloneStack (GenericPlant):
 		
 	def add(self, a=1):
 		self.navail += a
+
+	def __str__(self):
+		return "[{}]x{}".format(self.genes, self.navail)
